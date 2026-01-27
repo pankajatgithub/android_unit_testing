@@ -37,16 +37,29 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    implementation("com.google.code.gson:gson:2.13.2")
-    implementation(libs.core.ktx)
-    testImplementation(libs.junit)
-    testImplementation(libs.junit.jupiter)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+
+    dependencies {
+
+        // App dependencies
+        implementation("androidx.core:core-ktx:1.7.0")
+        implementation("androidx.appcompat:appcompat:1.5.1")
+        implementation("com.google.android.material:material:1.6.1")
+        implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+        implementation("com.google.code.gson:gson:2.8.6")
+
+        // Unit tests
+        testImplementation("junit:junit:4.12")
+
+        // Instrumentation / UI tests
+        androidTestImplementation("androidx.test:core:1.5.0-rc01")
+        androidTestImplementation("androidx.test:core-ktx:1.5.0-rc01")
+        androidTestImplementation("androidx.test.ext:junit:1.1.4-rc01")
+        androidTestImplementation("androidx.test.ext:junit-ktx:1.1.4-rc01")
+        androidTestImplementation("androidx.test:runner:1.5.0-rc01")
+        androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0-rc01")
+        androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.0-rc01")
+    }
     testImplementation(kotlin("test"))
+
 }
+
