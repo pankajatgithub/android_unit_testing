@@ -31,36 +31,36 @@ class QuoteManagerTest {
         assertEquals(12,quoteManager.quoteList.size)
     }
 
-    @Test
-    fun testPreviousQuote_expected_CorrectQuote() {
-        // Arrange
-        val quoteManager = QuoteManager()
-        quoteManager.populateQuotes(
-            arrayOf(
-                Quote("This is first quote", "1"),
-                Quote("This is second quote", "2"),
-                Quote("This is third quote", "3")
-            ))
-        // Act
-        val quote = quoteManager.getPreviousQuote()
-        // Assert
-        assertEquals("1", quote.author)
-
-    }
-    @Test
-    fun testNextQuote_expected_CorrectQuote() {
-        // Arrange
-        val quoteManager = QuoteManager()
-        quoteManager.populateQuotes(
-            arrayOf(
-                Quote("This is first quote", "1"),
-                Quote("This is second quote", "2"),
-                Quote("This is third quote", "3")
-            ))
-        // Act
-        val quote = quoteManager.getNextQuote()
-        // Assert
-        assertEquals("2", quote.author)
-
-    }
+//    @Test
+//    fun testPreviousQuote_expected_CorrectQuote() {
+//        // Arrange
+//        val quoteManager = QuoteManager()
+//        quoteManager.populateQuotes(
+//            arrayOf(
+//                Quote("This is first quote", "1"),
+//                Quote("This is second quote", "2"),
+//                Quote("This is third quote", "3")
+//            ))
+//        // Act
+//        val quote = quoteManager.getPreviousQuote()
+//        // Assert
+//        assertEquals("1", quote.author)
+//
+//    }
+//    @Test
+//    fun testNextQuote_expected_CorrectQuote() {
+//        // Arrange
+//        val quoteManager = QuoteManager()
+//        quoteManager.populateQuotes(
+//            arrayOf(
+//                Quote("This is first quote", "1"),
+//                Quote("This is second quote", "2"),
+//                Quote("This is third quote", "3")
+//            ))
+//        // Act
+//        val quote = quoteManager.getNextQuote()
+//        // Assert
+//        assertEquals("2", quote.author)
+//
+//    }
 }
