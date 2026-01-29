@@ -59,7 +59,7 @@ dependencies {
     kaptAndroidTest("androidx.room:room-compiler:$room_version")
 
     androidTestImplementation("androidx.room:room-testing:$room_version")      // Kotlin extensions
-             // KSP for annotation processing
+    // KSP for annotation processing
 
     // Optional Room support libraries
     implementation("androidx.room:room-rxjava2:$room_version")
@@ -82,10 +82,21 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.0-rc01")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
 
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
-    testImplementation("org.mockito:mockito-core:5.11.0")
-    testImplementation("org.mockito:mockito-inline:5.11.0")
-    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
-    androidTestImplementation("org.mockito:mockito-android:5.11.0")
+//    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+//    testImplementation("org.mockito:mockito-core:5.11.0")
+//    testImplementation("org.mockito:mockito-inline:5.11.0")
+//    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+//    androidTestImplementation("org.mockito:mockito-android:5.11.0")
+
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Coroutine testing
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
 
 }
