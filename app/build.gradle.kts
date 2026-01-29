@@ -69,7 +69,7 @@ dependencies {
     testImplementation("androidx.room:room-testing:$room_version")
 
     // Unit tests
-    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.13.2")
     testImplementation(kotlin("test"))
 
     // Instrumentation / UI tests
@@ -81,4 +81,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0-rc01")
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.0-rc01")
     androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
+
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    testImplementation("org.mockito:mockito-core:5.11.0")
+    testImplementation("org.mockito:mockito-inline:5.11.0")
+    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    androidTestImplementation("org.mockito:mockito-android:5.11.0")
+
 }
