@@ -1,10 +1,11 @@
 package com.example.testcase.models
 
 data class ProductListItem(
-    val id: Int,
-    val title: String,
-    val price: Double,
-    val description: String,
+
     val category: String,
-    val image: String
+    val description: String,
+    val id: Int,
+    val image: String,
+    val price: Double,
+    val title: String,
 )

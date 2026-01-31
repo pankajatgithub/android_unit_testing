@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -16,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -29,10 +30,23 @@ android {
         }
     }
 
+        sourceSets {
+            getByName("test") {
+                java.srcDir("src/sharedTest/kotlin")
+            }
+            getByName("androidTest") {
+                java.srcDir("src/sharedTest/kotlin")
+            }
+        }
+    
+
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
 
     kotlinOptions {
         jvmTarget = "11"
@@ -41,6 +55,8 @@ android {
             "-opt-in=kotlin.RequiresOptIn"
         )
     }
+
+
 }
 
 dependencies {
