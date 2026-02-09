@@ -1,0 +1,16 @@
+[
+  {
+    "id":1,
+    "title":"Test",
+    "description":"Test description",
+    "category":"men's clothing",
+    "image":"https://static.toiimg.com/thumb/114914252/114914252.jpg?height=746&width=420&resizemode=76&imgsize=205100"
+  },
+  {
+    "id":2,
+    "title":"Test2",
+    "description":"Test description2",
+    "category":"women's clothing",
+    "image":"https://static.toiimg.com/thumb/114914252/114914252.jpg?height=746&width=420&resizemode=76&imgsize=205100"
+  }
+]

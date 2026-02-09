@@ -38,7 +38,7 @@ android {
                 java.srcDir("src/sharedTest/kotlin")
             }
         }
-    
+
 
 
 
@@ -93,6 +93,11 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    // MockWebServer for local unit tests
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
+
+    // Optional: MockWebServer for instrumentation tests
+    androidTestImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
 
     // -------------------------
     // Glide
