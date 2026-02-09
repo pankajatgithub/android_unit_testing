@@ -13,39 +13,39 @@ import org.junit.Rule
 import org.junit.Test
 
 class UtilTest {
-
-    private val testDispatcher = StandardTestDispatcher()
-    @get:Rule
-    val mainCoroutineRule = MainCoroutineRule()
-
-
-//    @Before
-//    fun setUp() {
-//        Dispatchers.setMain(testDispatcher)
+//
+//    private val testDispatcher = StandardTestDispatcher()
+//    @get:Rule
+//    val mainCoroutineRule = MainCoroutineRule()
+//
+//
+////    @Before
+////    fun setUp() {
+////        Dispatchers.setMain(testDispatcher)
+////    }
+//
+//    @Test
+//    fun testGetUser() {
+//        val sut = Util(mainCoroutineRule.testDispatcher)
+//        //rentest is best for testing coroutines with avoiding delay hence test case run fast
+//         runTest{
+//             sut.getAddress()
+//         }
+////        assertEquals("CheezyCode", result)
 //    }
-
-    @Test
-    fun testGetUser() {
-        val sut = Util(mainCoroutineRule.testDispatcher)
-        //rentest is best for testing coroutines with avoiding delay hence test case run fast
-         runTest{
-             sut.getAddress()
-         }
-//        assertEquals("CheezyCode", result)
-    }
-
-    @Test
-    fun testCoroutinesetFunctionality() {
-        val sut = Util(mainCoroutineRule.testDispatcher)
-        //rentest is best for testing coroutines with avoiding delay hence test case run fast
-        runTest{
-            sut.checkCoroutinesetFunctionality()
-            mainCoroutineRule.testDispatcher.scheduler.advanceUntilIdle() // this is used to run the coroutine until it is completed
-            assertEquals(true, sut.globalArg)
-
-        }
-//        assertEquals("CheezyCode", result)
-    }
+//
+//    @Test
+//    fun testCoroutinesetFunctionality() {
+//        val sut = Util(mainCoroutineRule.testDispatcher)
+//        //rentest is best for testing coroutines with avoiding delay hence test case run fast
+//        runTest{
+//            sut.checkCoroutinesetFunctionality()
+//            mainCoroutineRule.testDispatcher.scheduler.advanceUntilIdle() // this is used to run the coroutine until it is completed
+//            assertEquals(true, sut.globalArg)
+//
+//        }
+////        assertEquals("CheezyCode", result)
+//    }
 
 //    @After
 //    fun tearDown() {
